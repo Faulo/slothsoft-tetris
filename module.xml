@@ -1,19 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module>
-	<fragment name="game">
-		<template name="home" />
-		<style name="game" />
-		<script name="core" />
-		<script name="Tetris" />
-		<script name="Tetris.Block" />
-		<script name="Tetris.Board" />
-		<script name="Tetris.Controls" />
-		<script name="Tetris.Game" />
-		<script name="Tetris.Pos" />
-		<script name="Tetris.Shape" />
-		<script name="Tetris.Storage" />
-	</fragment>
+<?xml version="1.0"?>
+<module xmlns="http://schema.slothsoft.net/farah/module" xmlns:sfm="http://schema.slothsoft.net/farah/module">
+  <!--
+Farah Module Manifest
 
+Module: tetris
+Vendor: slothsoft
+Farah ID: farah://slothsoft@tetris
+Composer ID: slothsoft/tetris
 
-	<resource name="game" path="game.xml" type="application/xml" />
+Homepage: http://farah.slothsoft.net/modules/tetris
+Packagist: https://packagist.org/packages/slothsoft/tetris
+GitHub: https://github.com/Faulo/slothsoft-tetris
+
+Llo
+-->
+  <default-configuration/>
+  <assets>
+    <resource-directory name="data" path="data" type="application/x-php"/>
+    <resource-directory name="css" path="stylesheet" type="text/css"/>
+    <resource-directory name="js" path="script" type="application/javascript"/>
+    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
+    <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+    <resource-directory name="pages" path="pages" type="application/xml"/>
+    <fragment name="game">
+      <use-template ref="xsl/home"/>
+      <use-stylesheet ref="css/game"/>
+      <use-script ref="js/core"/>
+      <use-script ref="js/Tetris"/>
+      <use-script ref="js/Tetris.Block"/>
+      <use-script ref="js/Tetris.Board"/>
+      <use-script ref="js/Tetris.Controls"/>
+      <use-script ref="js/Tetris.Game"/>
+      <use-script ref="js/Tetris.Pos"/>
+      <use-script ref="js/Tetris.Shape"/>
+      <use-script ref="js/Tetris.Storage"/>
+    </fragment>
+    <directory name="static">
+      <resource name="game" path="game.xml" type="application/xml"/>
+    </directory>
+  </assets>
 </module>
