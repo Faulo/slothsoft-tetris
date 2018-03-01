@@ -17,7 +17,7 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Slothsoft\\Tetris\\" : "src/Slothsoft/Therapy/"
+			"Slothsoft\\Tetris\\" : "src/Slothsoft/Tetris/"
 		}
 	}
 }
