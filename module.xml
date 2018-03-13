@@ -27,16 +27,16 @@ Llo
     </directory>
     <fragment name="game">
       <use-template ref="xsl/home"/>
-      <use-stylesheet ref="css/game"/>
-      <use-script ref="js/core"/>
-      <use-script ref="js/Tetris"/>
-      <use-script ref="js/Tetris.Block"/>
-      <use-script ref="js/Tetris.Board"/>
-      <use-script ref="js/Tetris.Controls"/>
-      <use-script ref="js/Tetris.Game"/>
-      <use-script ref="js/Tetris.Pos"/>
-      <use-script ref="js/Tetris.Shape"/>
-      <use-script ref="js/Tetris.Storage"/>
+      <link-stylesheet ref="css/game"/>
+      <link-script ref="js/core"/>
+      <link-script ref="js/Tetris"/>
+      <link-script ref="js/Tetris.Block"/>
+      <link-script ref="js/Tetris.Board"/>
+      <link-script ref="js/Tetris.Controls"/>
+      <link-script ref="js/Tetris.Game"/>
+      <link-script ref="js/Tetris.Pos"/>
+      <link-script ref="js/Tetris.Shape"/>
+      <link-script ref="js/Tetris.Storage"/>
     </fragment>
   </assets>
 </module>
