@@ -9,16 +9,16 @@
     </directory>
     
     <fragment name="game">
-      <use-template ref="xsl/home"/>
-      <link-stylesheet ref="css/game"/>
-      <link-script ref="js/core"/>
-      <link-script ref="js/Tetris"/>
-      <link-script ref="js/Tetris.Block"/>
-      <link-script ref="js/Tetris.Board"/>
-      <link-script ref="js/Tetris.Controls"/>
-      <link-script ref="js/Tetris.Game"/>
-      <link-script ref="js/Tetris.Pos"/>
-      <link-script ref="js/Tetris.Shape"/>
-      <link-script ref="js/Tetris.Storage"/>
+      <use-template ref="/xsl/home"/>
+      <link-stylesheet ref="/css/game"/>
+      <link-script ref="/js/core"/>
+      <link-script ref="/js/Tetris"/>
+      <link-script ref="/js/Tetris.Block"/>
+      <link-script ref="/js/Tetris.Board"/>
+      <link-script ref="/js/Tetris.Controls"/>
+      <link-script ref="/js/Tetris.Game"/>
+      <link-script ref="/js/Tetris.Pos"/>
+      <link-script ref="/js/Tetris.Shape"/>
+      <link-script ref="/js/Tetris.Storage"/>
     </fragment>
   </assets>
