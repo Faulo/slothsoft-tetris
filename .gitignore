@@ -8,8 +8,5 @@ $RECYCLE.BIN/
 /composer.phar
 /vendor/
 
-# == phpDocumentor ==
-/docs/tmp/
-
 # == PHPUnit ==
 /.phpunit.result.cache

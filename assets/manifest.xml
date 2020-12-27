@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <assets xmlns="http://schema.slothsoft.net/farah/module">
-	<resource-directory name="css" type="text/css"/>
-	<resource-directory name="js" type="application/javascript"/>
-	<resource-directory name="xsl" type="application/xslt+xml"/>
+	<resource-directory name="css" type="text/css" />
+	<resource-directory name="js" type="application/javascript" />
+	<resource-directory name="xsl" type="application/xslt+xml" />
 
 	<directory name="static">
-		<resource name="game" type="application/xml"/>
+		<resource name="game" type="application/xml" />
 	</directory>
 
 	<fragment name="game">
-		<use-template ref="/xsl/home"/>
-		<link-stylesheet ref="/css/game"/>
-		<link-script ref="/js/core"/>
-		<link-script ref="/js/Tetris"/>
-		<link-script ref="/js/Tetris.Block"/>
-		<link-script ref="/js/Tetris.Board"/>
-		<link-script ref="/js/Tetris.Controls"/>
-		<link-script ref="/js/Tetris.Game"/>
-		<link-script ref="/js/Tetris.Pos"/>
-		<link-script ref="/js/Tetris.Shape"/>
-		<link-script ref="/js/Tetris.Storage"/>
+		<use-template ref="/xsl/home" />
+		<link-stylesheet ref="/css/game" />
+		<link-script ref="/js/core" />
+		<link-script ref="/js/Tetris" />
+		<link-script ref="/js/Tetris.Block" />
+		<link-script ref="/js/Tetris.Board" />
+		<link-script ref="/js/Tetris.Controls" />
+		<link-script ref="/js/Tetris.Game" />
+		<link-script ref="/js/Tetris.Pos" />
+		<link-script ref="/js/Tetris.Shape" />
+		<link-script ref="/js/Tetris.Storage" />
 	</fragment>
 </assets>
