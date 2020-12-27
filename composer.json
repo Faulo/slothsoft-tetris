@@ -10,7 +10,6 @@
 	"type" : "library",
 	"require" : {
 		"php" : "7.2 - 7.4",
-		"slothsoft/core" : "^1.0",
 		"slothsoft/farah" : "^1.0"
 	},
 	"require-dev" : {
@@ -28,6 +27,11 @@
 	"autoload-dev" : {
 		"psr-4" : {
 			"Slothsoft\\Tetris\\" : "tests"
+		}
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-develop" : "1.0.x-dev"
 		}
 	},
 	"homepage" : "http://farah.slothsoft.net/modules/tetris"
