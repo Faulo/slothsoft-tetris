@@ -4,32 +4,16 @@
 
 	<xsl:template match="*">
 		<div>
-			<script type="application/javascript">
-				function startGame(parentNode) {
-				/*
-				var game = {};
-				sire(Game, game);
-				game.init(document.body);
-				game.dom.frame.focus();
-				*/
-				var game = new Tetris.Game();
-				game.init(parentNode);
-				game.dom.frame.focus();
-				if
-				(parentNode.lastChild.previousSibling) {
-				parentNode.removeChild(parentNode.firstChild);
-				}
-				}
-				/*
-				addEventListener(
-				"load",
-				function(eve) {
-				startGame(document.getElementById("Tetris"));
-				},
-				false
-				);
-				//*/
-			</script>
+			<script type="application/javascript"><![CDATA[
+function startGame(parentNode) {
+	var game = new Tetris.Game();
+	game.init(parentNode);
+	game.dom.frame.focus();
+	if (parentNode.lastChild.previousSibling) {
+		parentNode.removeChild(parentNode.firstChild);
+	}
+}
+			]]></script>
 			<button type="button" onclick="startGame(this.parentNode.lastChild);">
 				<code>Start Game</code>
 			</button>
