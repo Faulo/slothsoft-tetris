@@ -1,39 +1,34 @@
 {
-    "name": "slothsoft/tetris",
-    "description": "A Farah module that contains a simple HTML Tetris implementation.",
-    "license": "WTFPL",
-    "authors": [
-        {
-            "name": "Daniel Schulz",
-            "email": "info.slothsoft@gmail.com"
-        }
-    ],
-    "type": "library",
-    "require": {
-        "php": "^7.2",
-        "slothsoft/core": "^1.0",
-        "slothsoft/farah": "^1.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.5"
-    },
-    "autoload": {
-        "psr-0": {
-            "Slothsoft\\Tetris\\": "src/"
-        },
-        "files": [
-            "src/registerModule.php"
-        ]
-    },
-    "keywords": [
-        "slothsoft",
-        "farah-module"
-    ],
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
-    },
-    "classmap-authoritative": false,
-    "homepage": "http://farah.slothsoft.net/modules/tetris"
+	"name" : "slothsoft/tetris",
+	"description" : "An example Farah module that contains a simple HTML Tetris implementation.",
+	"license" : "WTFPL",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
+		}
+	],
+	"type" : "library",
+	"require" : {
+		"php" : "7.2 - 7.4",
+		"slothsoft/core" : "^1.0",
+		"slothsoft/farah" : "^1.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "8.5.*"
+	},
+	"autoload" : {
+		"files" : [
+			"scripts/bootstrap.php"
+		]
+	},
+	"keywords" : [
+		"slothsoft",
+		"farah-module"
+	],
+	"autoload-dev" : {
+		"psr-4" : {
+			"Slothsoft\\Tetris\\" : "tests"
+		}
+	},
+	"homepage" : "http://farah.slothsoft.net/modules/tetris"
 }
